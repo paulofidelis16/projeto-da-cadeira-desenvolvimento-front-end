@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PEDIDO DE PEÇAS</title>
+    </head>
+    <body>
+
+        
+         <img src="c:\Users\MOISESOLIVEIRAMARTIN\Downloads\WhatsApp Image 2026-11-25 at 19.49.36.jpeg" alt="Adriano Motos" class="logo">
+
+
+        <form id="pedido">
+
+            <fieldset class="formulario">
+
+                <legend>Adriano Motos - Pedido de Peças</legend>
+
+                <label> Nome: </label>
+                <input type="text" id="nome" name="nome" placeholder="EX: João" required><br>
+
+                <label> Telefone / WhatsApp: </label>
+                <input type="text" id="telefone" name="telefone" required><br>
+                
+                 <label> Tipo da Moto: </label>
+                <input type="text" id="moto" name="moto" placeholder="EX: Honda CG 160 2022" required><br>
+
+                <label> Peça desejada: </label>
+                <input type="text" id="peca" name="peca" required><br>
+
+                <label> Quantidade: </label>
+                <input type="number" id="quantidade" name="quantidade" required><br>
+
+                <label> Tipo de Peça:</label>
+                <select id="tipo-peca" name="tipo-peca" required>
+                    <option value="">Selecione</option>
+                    <option value="original">Original</option>
+                    <option value="paralela"> Paralela</option>
+                    <option value="qualquer">Tanto faz</option>
+
+                </select><br>
+
+                <label>Preferencia de recebimento:</label>
+                <select id="entrega" name="entrega" required>
+                    <option value="">Selecione</option>
+                    <option value="retirar"> Retirar na loja</option>
+                    <option value="entrega">Entrega</option> 
+                </select><br>
+
+                <fieldset id="dados-entrega" style="display:none;">
+                    <legend>Dados da entrega</legend>
+
+                <label> Endereço completo: </label>
+                <input type="text" id="endereco" name="endereco" placeholder="EX: Rua das Flores, 123 - Mangabeira"><br>
+
+                <label> Forma de pagamento: </label>
+                <select id="pagamento" name="pagamento">
+                   <option value="">Selecione</option>
+                   <option value="pix">Pix</option>
+                   <option value="dinheiro">Dinheiro na entrega</option>
+                   <option value="cartao">Cartão na entrega (maquininha)</option>
+                </select><br>
+
+                <div id="campo-troco" style="display:none;">
+                <label> Troco para quanto? </label>
+                <input type="text" id="troco" name="troco" placeholder="EX: R$ 100,00"><br>
+                </div>
+
+
+                <label> Observações (opcional): </label>
+                <textarea id="obs" name="obs" rows="3"></textarea><br>
+
+                <button type="submit" class="botao-form">Enviar pedido</button>
+
+            </fieldset>
+            
+        </form>
+        <script src="js.pedido.js"></script>
+    </body>
+</html>
