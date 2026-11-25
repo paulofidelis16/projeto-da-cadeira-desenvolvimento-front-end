@@ -1,4 +1,4 @@
-/* CONFIGURAÇÃO GERAL */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +11,6 @@ body {
     color: #222;
 }
 
-/* CABEÇALHO */
 header {
     background-color: #111;
     color: white;
@@ -27,7 +26,6 @@ header h1 {
     margin-bottom: 20px;
 }
 
-/* IMAGEM DO CABEÇALHO */
 header img {
     width: 180px;
     height: 130px;
@@ -37,7 +35,6 @@ header img {
     margin-bottom: 20px;
 }
 
-/* MENU */
 nav {
     margin-top: 10px;
 }
@@ -62,7 +59,6 @@ main {
     margin: 40px auto;
 }
 
-/* DESTAQUE */
 .destaque {
     background-color: #fff;
     text-align: center;
@@ -84,7 +80,6 @@ main {
     color: #555;
 }
 
-/* BOTÃO */
 .botao {
     display: inline-block;
     background-color: #e60000;
@@ -101,7 +96,6 @@ main {
     transform: scale(1.05);
 }
 
-/* SEÇÃO QUEM SOMOS */
 .conteudo {
     background-color: white;
     margin-top: 30px;
@@ -122,7 +116,6 @@ main {
     line-height: 1.6;
 }
 
-/* RODAPÉ */
 footer {
     background-color: #111;
     color: white;
@@ -132,7 +125,6 @@ footer {
     border-top: 4px solid #e60000;
 }
 
-/* RESPONSIVIDADE */
 @media (max-width: 600px) {
     header h1 {
         font-size: 27px;
