@@ -1,0 +1,113 @@
+body {
+    background-color: #080808;
+    background-image: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 20px,
+        #151515 21px,
+        transparent 22px
+    );
+}
+
+.logo {
+    display: block;
+    width: 180px;
+    margin: 20px auto;
+}
+
+#pedido {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*css do formulario*/
+.formulario {
+    padding: 15px;
+    margin: 20px;
+    width: 600px;
+    border-radius: 30px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #ccc;
+    color: white;
+    background-color: #0B0C10;
+}
+
+.formulario legend {
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+}
+
+.formulario label {
+    background-color: #1f2833;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.formulario input{
+    border-radius: 10px;
+    padding: 8px;
+}
+
+/*css do formulario*/
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border: 2px solid red;
+}
+
+/*coloca um destaque nos espacos de prencher*/
+.formulario select:focus{
+    outline: none;
+    border: 2px solid #1f2833;
+}
+
+.formulario select {
+    background-color: #161b22;
+    color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+/*css das opições do formulario*/
+.formulario select option {
+    background-color: #0B0C10;
+    color: white;
+    padding: 10px;
+}
+
+.formulario textarea {
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.formulario select option:checked {
+    background-color: #1f2833;
+    color: white;
+}
+
+/*css do botão*/
+.botao-form{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    align-self: center;
+    padding: 12px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    width: 50%;
+}
+
+.botao-form:hover {
+    background-color: blue;
+    transition: 0.3s
+}

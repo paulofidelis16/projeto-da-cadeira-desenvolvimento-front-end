@@ -1,0 +1,92 @@
+body {
+    background-color: #080808;
+/*--linhas do fundo--*/
+    background-image: repeating-linear-gradient(
+        120deg,
+        transparent 0px,
+        transparent 40px,
+        #300000 41px,
+        #300000 44px,
+        transparent 45px
+    );
+}
+h2{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    display: block;
+    width: 180px;
+    margin: 20px auto;
+}
+
+
+/* centralizar o formulario */
+#formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/*css do formulario*/
+.formulario {
+    padding: 10px;
+    margin: 20px;
+    width: 600px;
+    border-radius: 30px;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #ccc;
+    color: white;
+    background-color: #0B0C10;
+}
+
+.formulario legend {
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+}
+
+.formulario label{
+    background-color: #1f2833;
+    font-size: 18px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.formulario input{
+    border-radius: 10px;
+    padding: 8px;
+}
+
+/*coloca um destaque vermelho nos espacos de prencher*/
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border: 2px solid red;
+}
+
+/*css do botão*/
+.botao-form {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    align-self: center;
+    padding: 12px 20px;
+    font-size: 17px;
+    font-weight: bold;
+    width: 50%;
+}
+
+.botao-form:hover {
+    background-color: blue;
+    transition: 0.3s
+}
